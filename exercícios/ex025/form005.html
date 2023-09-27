@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="../ex020/imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Exemplode formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="idmasculino" value="M">
+                <label for="idmasculino">masculino</label><br>
+                <input type="radio" name="sexo" id="idfeminino" value="F">
+                <label for="idfeminino">feminino</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>esportes favoritos</legend>
+            <p>
+                <!-- posso colocar checked dentro do input para o site iniciar com o input marcado -->
+                <input type="checkbox" name="futebol" id="idfutebol">
+                <label for="idfutebol">futebol</label><br>
+                <input type="checkbox" name="basquete" id="idbasquete">
+                <label for="idbasquete">basquete</label><br>
+                <input type="checkbox" name="natacao" id="idnatacao">
+                <label for="idnatacao">natação</label><br>
+                <input type="checkbox" name="tenis" id="idtenis">
+                <label for="idtenis">tênis</label>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

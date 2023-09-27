@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="../ex020/imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="idano">em que ano você nasceu ? </label>
+            <input type="number" name="ano" id="idano" min="1900" max="2023" oninput="CalculaIdade()">
+        </p>
+        <p>
+            <label for="ididade">sua idade é: </label>
+            <output id="ididade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+
+    <script>
+        function CalculaIdade(){
+            let AnoAtual = new Date().getFullYear()
+            ididade.innerHTML = Number(AnoAtual) - Number(idano.value)
+        }
+    </script>
+</body>
+</html>

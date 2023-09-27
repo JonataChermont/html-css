@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="../ex020/imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="idusuario">nome:</label>
+            <input type="text" name="usuario" id="idusuario" required size="20" maxlength="50" minlength="25" placeholder="nome completo" autocomplete="username">
+        </p>
+        <p>
+            <label for="idsenha">senha:</label>
+            <input type="password" name="senha" id="idsenha" required size="20" maxlength="15" minlength="8" placeholder="senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

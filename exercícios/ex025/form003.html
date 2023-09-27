@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formuláriio</title>
+    <link rel="shortcut icon" href="../ex020/imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="idnome">nome:</label>
+            <input type="text" name="nome" id="idnome" required minlength="25" maxlength="60" placeholder="nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="idmedia">média:</label>
+            <input type="number" name="media" id="idmedia" required min="0" max="10" placeholder="0 a 10" step="0.1">
+        </p>
+        <p>
+            <label for="idmes">período letivo:</label>
+            <input type="month" name="mes" id="idmes" required value="2023-09">
+        </p>
+        <p>
+            <label for="iddia">dia da prova:</label>
+            <input type="date" name="dia" id="iddia" required value="2023-09-19">
+        </p>
+        <p>
+            <label for="idhora">horário da prova:</label>
+            <input type="time" name="hora" id="idhora" required>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

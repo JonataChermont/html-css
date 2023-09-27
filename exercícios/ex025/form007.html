@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="../ex020/imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!-- Primeira forma de colocar lista -->
+        <p>
+            <label for="idestados">estado: </label>
+            <select name="estado" id="idestados">
+                <!-- <option value="" selected>---- escolha ----</option> -->
+                <optgroup label="Região sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP" selected>São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <!-- Segunda forma de colocar lista -->
+        <p>
+            <label for="idprofissao">profissão: </label>
+            <input type="text" name="profissao" id="idprofissao" list="listaprofissao" size="15" required>
+            <datalist id="listaprofissao">
+                <option>administrador</option>
+                <option>professor</option>
+                <option>desenvolvedor</option>
+                <option>médico</option>
+                <option>advogado</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="idmensagem">mensagem: </label><br>
+            <textarea name="mensagem" id="idmensagem" cols="30" rows="10"></textarea> <!-- usar o method="post" -->
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

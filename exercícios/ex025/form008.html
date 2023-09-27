@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="../ex020/imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="idn1">primeiro número: </label>
+            <input type="number" name="n1" id="idn1" min="0" max="50" required oninput="idsoma.innerHTML = Number(idn1.value) + Number(idn2.value)">
+        </p>
+        <p>
+            <label for="idn2">segundo número: </label>
+            <input type="number" name="n2" id="idn2" min="0" max="50" required oninput="idsoma.innerHTML = Number(idn1.value) + Number(idn2.value)">
+        </p>
+        <p>
+            <label for="idsoma">soma: </label>
+            <output name="soma" id="idsoma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
