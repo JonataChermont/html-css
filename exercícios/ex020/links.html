@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        /*
+            SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-classe
+            :: = pseudo-elemento
+            > = clildren (filho)
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: rgba(255, 0, 0, 0.747);
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+            font-weight: normal;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .importante::before {/*DEPOIS*/
+            content: '☞ ';
+        }
+
+        .importante::after {/*DEPOIS*/
+            content: ' ☜';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/jonatachermont" class="importante" target="_blank" rel="externo">Repositório GitHub</a></li>
+        <li><a href="https://www.instagram.com/jonatachermont/?r=nametag" target="_blank" rel="externo">Instagram</a></li>
+    </ul>
+</body>
+</html>
