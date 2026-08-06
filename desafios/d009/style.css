@@ -1,0 +1,30 @@
+
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            color: white;
+            font-size: 2em;
+        }
+
+        img.thumb {
+            width: 200px;
+            height: 113px;
+        }
+
+        img.big-thumb {
+            width: 400px;
+            height: 226px;
+        }
+
+        a.curso-completo {
+            color: white;
+            font-size: .8em;
+        }

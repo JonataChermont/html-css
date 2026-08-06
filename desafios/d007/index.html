@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../d005/imagens/jonatachermont.ico" type="image/x-icon">
+    <title>Imagem flexível</title>
+</head>
+<body>
+    <h1>Imagem flexível</h1>
+    <p>Voçê está vendo a imagem completa ? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experência.</p>
+    <picture>
+        <source media="(max-width: 650px)" srcset="imagens/spiderman-smartphone.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/spiderman-tablet.png" type="image/png">
+        <img src="imagens/spiderman-desktop.png" alt="foto do homem-aranha">
+    </picture>
+</body>
+</html>

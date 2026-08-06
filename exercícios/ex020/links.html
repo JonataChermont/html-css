@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../jonatachermont.ico" type="image/x-icon">
+    <title>links</title>
+    <!-- :visited
+    :active -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: #1A1A1A;
+            text-decoration: none;
+        }
+
+        /* PSEUDO-CLASSES */
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a:visited {
+            color: blueviolet;
+        }
+
+        /* PSEUDO-ELEMENTOS */
+
+        .principal::before {
+            content: '-> ';
+        }
+        
+        .principal::after {
+            content: ' <-';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositório do github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" rel="external" class="principal">canal no youtube</a></li>
+        <li><a href="https://cursoemvideo.com/" target="_blank" rel="external">site do Cursoemvídeo</a></li>
+    </ul>
+</body>
+</html>
