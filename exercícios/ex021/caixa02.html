@@ -7,9 +7,10 @@
     <title>Grounping Tags</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
             background-color: dimgray;
-            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 800px;
+            margin: 60px auto;
         }
 
         header {
@@ -49,7 +50,16 @@
 
         article {
             background-color: lightgray;
-            padding: 5px;
+            padding: 10px;
+        }
+
+        .impar {
+            border-radius: 10px 0px;
+        }
+
+        .par {
+            border-radius: 0px 10px;
+            margin: 10px 0px;
         }
 
         article > h2 {
@@ -59,6 +69,11 @@
 
         article > aside {
             background-color: rgb(165, 165, 165);
+            padding: 2px 5px;
+        }
+
+        article > aside > p {
+            margin: 0px;
         }
 
         footer {
@@ -90,7 +105,7 @@
     </header>
     <main>
         <section>
-            <article>
+            <article class="impar">
                 <h2>Notícias sobre o Brasil</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, ullam, eius perspiciatis ut quidem excepturi dolorem ducimus hic animi, necessitatibus nemo deserunt adipisci minima omnis aliquam repellat. Sapiente, aperiam ab? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet adipisci harum sequi sunt repellendus suscipit neque, sed ducimus facere autem dolore doloremque voluptate, ut quasi eligendi dolores illo nesciunt temporibus! lo</p>
                 <aside>
@@ -99,12 +114,18 @@
             </article>
         </section>
         <section>
-            <article>
+            <article class="par">
                 <h2>Esportes</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur odio quisquam explicabo, expedita iste a autem dolore eum possimus nihil voluptatem excepturi in vel alias facilis, magnam placeat atque. Ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem possimus fugit ab aliquid. Sequi ratione molestiae quaerat deleniti iste at unde ipsa? Tempore nulla quod incidunt ipsum? Molestiae, cumque ea.</p>
                 <aside>
                     <p>Matéria públicada por Walter Casa Pequena</p>
                 </aside>
+            </article>
+        </section>
+        <section>
+            <article class="impar">
+                <h2>Curiosidades</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, nulla optio. Quia eveniet, provident corrupti necessitatibus accusantium tempore incidunt iusto suscipit eaque, laboriosam sit illo pariatur modi blanditiis. Aspernatur, sit! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, esse. Perferendis quam, a distinctio nesciunt doloribus debitis id necessitatibus velit soluta error veritatis quae facere quibusdam hic veniam repellendus. Minus?</p>
             </article>
         </section>
     </main>
